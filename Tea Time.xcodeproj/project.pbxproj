@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D836729B1B31EAC60059C59A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D836729A1B31EAC60059C59A /* AppDelegate.swift */; };
+		D836729D1B31EAC60059C59A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D836729C1B31EAC60059C59A /* ViewController.swift */; };
+		D83672A01B31EAC60059C59A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D836729E1B31EAC60059C59A /* Main.storyboard */; };
+		D83672A21B31EAC60059C59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83672A11B31EAC60059C59A /* Assets.xcassets */; };
+		D83672A51B31EAC60059C59A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83672A31B31EAC60059C59A /* LaunchScreen.storyboard */; };
+		D83672B01B31EAC60059C59A /* Tea_TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83672AF1B31EAC60059C59A /* Tea_TimeUITests.swift */; };
+		D83672B51B31EAC60059C59A /* Tea Time WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D83672B41B31EAC60059C59A /* Tea Time WatchKit App.app */; };
+		D83672BB1B31EAC60059C59A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D83672B91B31EAC60059C59A /* Interface.storyboard */; };
+		D83672BD1B31EAC60059C59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83672BC1B31EAC60059C59A /* Assets.xcassets */; };
+		D83672C41B31EAC60059C59A /* Tea Time WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = D83672C31B31EAC60059C59A /* Tea Time WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D83672CB1B31EAC60059C59A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83672CA1B31EAC60059C59A /* InterfaceController.swift */; };
+		D83672CD1B31EAC60059C59A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83672CC1B31EAC60059C59A /* ExtensionDelegate.swift */; };
+		D83672CF1B31EAC60059C59A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83672CE1B31EAC60059C59A /* NotificationController.swift */; };
+		D83672D11B31EAC60059C59A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D83672D01B31EAC60059C59A /* ComplicationController.swift */; };
+		D83672D31B31EAC60059C59A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D83672D21B31EAC60059C59A /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D83672AC1B31EAC60059C59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D836728F1B31EAC50059C59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83672961B31EAC50059C59A;
+			remoteInfo = "Tea Time";
+		};
+		D83672B61B31EAC60059C59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D836728F1B31EAC50059C59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83672B31B31EAC60059C59A;
+			remoteInfo = "Tea Time WatchKit App";
+		};
+		D83672C51B31EAC60059C59A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D836728F1B31EAC50059C59A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D83672C21B31EAC60059C59A;
+			remoteInfo = "Tea Time WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D83672DA1B31EAC60059C59A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				D83672C41B31EAC60059C59A /* Tea Time WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83672DE1B31EAC60059C59A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				D83672B51B31EAC60059C59A /* Tea Time WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D83672971B31EAC50059C59A /* Tea Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tea Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D836729A1B31EAC60059C59A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D836729C1B31EAC60059C59A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D836729F1B31EAC60059C59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D83672A11B31EAC60059C59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D83672A41B31EAC60059C59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D83672A61B31EAC60059C59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83672AB1B31EAC60059C59A /* Tea TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tea TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83672AF1B31EAC60059C59A /* Tea_TimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tea_TimeUITests.swift; sourceTree = "<group>"; };
+		D83672B11B31EAC60059C59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83672B41B31EAC60059C59A /* Tea Time WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tea Time WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83672BA1B31EAC60059C59A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		D83672BC1B31EAC60059C59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D83672BE1B31EAC60059C59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D83672C31B31EAC60059C59A /* Tea Time WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Tea Time WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D83672C91B31EAC60059C59A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		D83672CA1B31EAC60059C59A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		D83672CC1B31EAC60059C59A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		D83672CE1B31EAC60059C59A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		D83672D01B31EAC60059C59A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		D83672D21B31EAC60059C59A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D83672D41B31EAC60059C59A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D83672941B31EAC50059C59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83672A81B31EAC60059C59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83672C01B31EAC60059C59A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D836728E1B31EAC50059C59A = {
+			isa = PBXGroup;
+			children = (
+				D83672991B31EAC50059C59A /* Tea Time */,
+				D83672AE1B31EAC60059C59A /* Tea TimeUITests */,
+				D83672B81B31EAC60059C59A /* Tea Time WatchKit App */,
+				D83672C71B31EAC60059C59A /* Tea Time WatchKit Extension */,
+				D83672981B31EAC50059C59A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D83672981B31EAC50059C59A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D83672971B31EAC50059C59A /* Tea Time.app */,
+				D83672AB1B31EAC60059C59A /* Tea TimeUITests.xctest */,
+				D83672B41B31EAC60059C59A /* Tea Time WatchKit App.app */,
+				D83672C31B31EAC60059C59A /* Tea Time WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D83672991B31EAC50059C59A /* Tea Time */ = {
+			isa = PBXGroup;
+			children = (
+				D836729A1B31EAC60059C59A /* AppDelegate.swift */,
+				D836729C1B31EAC60059C59A /* ViewController.swift */,
+				D836729E1B31EAC60059C59A /* Main.storyboard */,
+				D83672A11B31EAC60059C59A /* Assets.xcassets */,
+				D83672A31B31EAC60059C59A /* LaunchScreen.storyboard */,
+				D83672A61B31EAC60059C59A /* Info.plist */,
+			);
+			path = "Tea Time";
+			sourceTree = "<group>";
+		};
+		D83672AE1B31EAC60059C59A /* Tea TimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D83672AF1B31EAC60059C59A /* Tea_TimeUITests.swift */,
+				D83672B11B31EAC60059C59A /* Info.plist */,
+			);
+			path = "Tea TimeUITests";
+			sourceTree = "<group>";
+		};
+		D83672B81B31EAC60059C59A /* Tea Time WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				D83672B91B31EAC60059C59A /* Interface.storyboard */,
+				D83672BC1B31EAC60059C59A /* Assets.xcassets */,
+				D83672BE1B31EAC60059C59A /* Info.plist */,
+			);
+			path = "Tea Time WatchKit App";
+			sourceTree = "<group>";
+		};
+		D83672C71B31EAC60059C59A /* Tea Time WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D83672CA1B31EAC60059C59A /* InterfaceController.swift */,
+				D83672CC1B31EAC60059C59A /* ExtensionDelegate.swift */,
+				D83672CE1B31EAC60059C59A /* NotificationController.swift */,
+				D83672D01B31EAC60059C59A /* ComplicationController.swift */,
+				D83672D21B31EAC60059C59A /* Assets.xcassets */,
+				D83672D41B31EAC60059C59A /* Info.plist */,
+				D83672C81B31EAC60059C59A /* Supporting Files */,
+			);
+			path = "Tea Time WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		D83672C81B31EAC60059C59A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D83672C91B31EAC60059C59A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D83672961B31EAC50059C59A /* Tea Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83672DF1B31EAC60059C59A /* Build configuration list for PBXNativeTarget "Tea Time" */;
+			buildPhases = (
+				D83672931B31EAC50059C59A /* Sources */,
+				D83672941B31EAC50059C59A /* Frameworks */,
+				D83672951B31EAC50059C59A /* Resources */,
+				D83672DE1B31EAC60059C59A /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83672B71B31EAC60059C59A /* PBXTargetDependency */,
+			);
+			name = "Tea Time";
+			productName = "Tea Time";
+			productReference = D83672971B31EAC50059C59A /* Tea Time.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D83672AA1B31EAC60059C59A /* Tea TimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83672E21B31EAC60059C59A /* Build configuration list for PBXNativeTarget "Tea TimeUITests" */;
+			buildPhases = (
+				D83672A71B31EAC60059C59A /* Sources */,
+				D83672A81B31EAC60059C59A /* Frameworks */,
+				D83672A91B31EAC60059C59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83672AD1B31EAC60059C59A /* PBXTargetDependency */,
+			);
+			name = "Tea TimeUITests";
+			productName = "Tea TimeUITests";
+			productReference = D83672AB1B31EAC60059C59A /* Tea TimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		D83672B31B31EAC60059C59A /* Tea Time WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83672DB1B31EAC60059C59A /* Build configuration list for PBXNativeTarget "Tea Time WatchKit App" */;
+			buildPhases = (
+				D83672B21B31EAC60059C59A /* Resources */,
+				D83672DA1B31EAC60059C59A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D83672C61B31EAC60059C59A /* PBXTargetDependency */,
+			);
+			name = "Tea Time WatchKit App";
+			productName = "Tea Time WatchKit App";
+			productReference = D83672B41B31EAC60059C59A /* Tea Time WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		D83672C21B31EAC60059C59A /* Tea Time WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D83672D71B31EAC60059C59A /* Build configuration list for PBXNativeTarget "Tea Time WatchKit Extension" */;
+			buildPhases = (
+				D83672BF1B31EAC60059C59A /* Sources */,
+				D83672C01B31EAC60059C59A /* Frameworks */,
+				D83672C11B31EAC60059C59A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tea Time WatchKit Extension";
+			productName = "Tea Time WatchKit Extension";
+			productReference = D83672C31B31EAC60059C59A /* Tea Time WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D836728F1B31EAC50059C59A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Standalone Code LLC";
+				TargetAttributes = {
+					D83672961B31EAC50059C59A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					D83672AA1B31EAC60059C59A = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = D83672961B31EAC50059C59A;
+					};
+					D83672B31B31EAC60059C59A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					D83672C21B31EAC60059C59A = {
+						CreatedOnToolsVersion = 7.0;
+					};
+				};
+			};
+			buildConfigurationList = D83672921B31EAC50059C59A /* Build configuration list for PBXProject "Tea Time" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D836728E1B31EAC50059C59A;
+			productRefGroup = D83672981B31EAC50059C59A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D83672961B31EAC50059C59A /* Tea Time */,
+				D83672AA1B31EAC60059C59A /* Tea TimeUITests */,
+				D83672B31B31EAC60059C59A /* Tea Time WatchKit App */,
+				D83672C21B31EAC60059C59A /* Tea Time WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D83672951B31EAC50059C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83672A51B31EAC60059C59A /* LaunchScreen.storyboard in Resources */,
+				D83672A21B31EAC60059C59A /* Assets.xcassets in Resources */,
+				D83672A01B31EAC60059C59A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83672A91B31EAC60059C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83672B21B31EAC60059C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83672BD1B31EAC60059C59A /* Assets.xcassets in Resources */,
+				D83672BB1B31EAC60059C59A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83672C11B31EAC60059C59A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83672D31B31EAC60059C59A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D83672931B31EAC50059C59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D836729D1B31EAC60059C59A /* ViewController.swift in Sources */,
+				D836729B1B31EAC60059C59A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83672A71B31EAC60059C59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83672B01B31EAC60059C59A /* Tea_TimeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D83672BF1B31EAC60059C59A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D83672CF1B31EAC60059C59A /* NotificationController.swift in Sources */,
+				D83672D11B31EAC60059C59A /* ComplicationController.swift in Sources */,
+				D83672CD1B31EAC60059C59A /* ExtensionDelegate.swift in Sources */,
+				D83672CB1B31EAC60059C59A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D83672AD1B31EAC60059C59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83672961B31EAC50059C59A /* Tea Time */;
+			targetProxy = D83672AC1B31EAC60059C59A /* PBXContainerItemProxy */;
+		};
+		D83672B71B31EAC60059C59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83672B31B31EAC60059C59A /* Tea Time WatchKit App */;
+			targetProxy = D83672B61B31EAC60059C59A /* PBXContainerItemProxy */;
+		};
+		D83672C61B31EAC60059C59A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D83672C21B31EAC60059C59A /* Tea Time WatchKit Extension */;
+			targetProxy = D83672C51B31EAC60059C59A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D836729E1B31EAC60059C59A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D836729F1B31EAC60059C59A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D83672A31B31EAC60059C59A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83672A41B31EAC60059C59A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D83672B91B31EAC60059C59A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D83672BA1B31EAC60059C59A /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D83672D51B31EAC60059C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D83672D61B31EAC60059C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D83672D81B31EAC60059C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Tea Time WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalonecode.Tea-Time.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D83672D91B31EAC60059C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Tea Time WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalonecode.Tea-Time.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D83672DC1B31EAC60059C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Tea_Time_WatchKit_Extension;
+				INFOPLIST_FILE = "Tea Time WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalonecode.Tea-Time.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		D83672DD1B31EAC60059C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Tea_Time_WatchKit_Extension;
+				INFOPLIST_FILE = "Tea Time WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalonecode.Tea-Time.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		D83672E01B31EAC60059C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tea Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalonecode.Tea-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D83672E11B31EAC60059C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Tea Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalonecode.Tea-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D83672E31B31EAC60059C59A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tea TimeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalonecode.Tea-TimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Tea Time";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D83672E41B31EAC60059C59A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Tea TimeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.standalonecode.Tea-TimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Tea Time";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D83672921B31EAC50059C59A /* Build configuration list for PBXProject "Tea Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83672D51B31EAC60059C59A /* Debug */,
+				D83672D61B31EAC60059C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D83672D71B31EAC60059C59A /* Build configuration list for PBXNativeTarget "Tea Time WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83672D81B31EAC60059C59A /* Debug */,
+				D83672D91B31EAC60059C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D83672DB1B31EAC60059C59A /* Build configuration list for PBXNativeTarget "Tea Time WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83672DC1B31EAC60059C59A /* Debug */,
+				D83672DD1B31EAC60059C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D83672DF1B31EAC60059C59A /* Build configuration list for PBXNativeTarget "Tea Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83672E01B31EAC60059C59A /* Debug */,
+				D83672E11B31EAC60059C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D83672E21B31EAC60059C59A /* Build configuration list for PBXNativeTarget "Tea TimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D83672E31B31EAC60059C59A /* Debug */,
+				D83672E41B31EAC60059C59A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D836728F1B31EAC50059C59A /* Project object */;
+}
