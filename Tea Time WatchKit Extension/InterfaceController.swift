@@ -12,6 +12,20 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+  static let blackTeaSeconds: NSTimeInterval = 300
+  static let greenTeaSeconds: NSTimeInterval = 240
+  static let coffeeSeconds: NSTimeInterval = 300
+  
+  let timers: [String : NSTimeInterval] = [
+    "Black Tea" : blackTeaSeconds,
+    "Green Tea" : greenTeaSeconds,
+    "Coffee"    : coffeeSeconds
+  ]
+  
+  var alertTimer: NSTimer?
+  
+  @IBOutlet var teaTimer: WKInterfaceTimer!
+  
     override func awakeWithContext(context: AnyObject?) {
         super.awakeWithContext(context)
         
@@ -27,5 +41,57 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
+  
+  @IBAction func blackTeaAction() {
+    startTimer("Black Tea")
+  }
 
+  @IBAction func greenTeaAction() {
+    startTimer("Green Tea")
+  }
+
+  @IBAction func coffeeAction() {
+    startTimer("Coffee")
+  }
+  
+  @IBAction func stopAction() {
+    stopWatchTimer()
+    stopAlertTimer()
+  }
+  
+  func startTimer(timerName: String) {
+    // Only start a timer if one isn't already running.
+    if (alertTimer == nil) {
+      let interval = timers[timerName]
+      startWatchTimer(interval)
+      startAlertTimer(interval)
+    }
+  }
+  
+  func startWatchTimer(interval: NSTimeInterval?) {
+    if let interval = interval {
+      teaTimer.setDate(NSDate(timeIntervalSinceNow: interval))
+      teaTimer.start()
+    }
+  }
+  
+  func stopWatchTimer() {
+    teaTimer.stop()
+  }
+  
+  func startAlertTimer(interval: NSTimeInterval?) {
+    if let interval = interval {
+      alertTimer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: "alertTimerFired:", userInfo: "Tea's done!", repeats: false)
+    }
+  }
+  
+  func stopAlertTimer() {
+    alertTimer?.invalidate()
+    alertTimer = nil
+  }
+  
+  func alertTimerFired(timer: NSTimer) {
+    WKInterfaceDevice.currentDevice().playHaptic(.Success)
+    alertTimer = nil
+  }
 }
