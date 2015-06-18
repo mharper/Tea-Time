@@ -77,11 +77,12 @@ class InterfaceController: WKInterfaceController {
   
   func stopWatchTimer() {
     teaTimer.stop()
+    teaTimer.setDate(NSDate())
   }
   
   func startAlertTimer(interval: NSTimeInterval?) {
     if let interval = interval {
-      alertTimer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: "alertTimerFired:", userInfo: "Tea's done!", repeats: false)
+      alertTimer = NSTimer.scheduledTimerWithTimeInterval(interval, target: self, selector: "alertTimerFired:", userInfo: nil, repeats: false)
     }
   }
   
